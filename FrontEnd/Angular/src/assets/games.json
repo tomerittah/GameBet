@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "homeTeamName": "Italy",
+    "awayTeamName": "England",
+    "homeTeamScore": 0,
+    "awayTeamScore": 0,
+    "stadium": "a",
+    "schedule": "c"
+  },
+  {
+    "id": 2,
+    "homeTeamName": "Spain",
+    "awayTeamName": "Portugal",
+    "homeTeamScore": 1,
+    "awayTeamScore": 0,
+    "stadium": "b",
+    "schedule": "d"
+  }
+]
