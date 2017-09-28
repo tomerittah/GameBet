@@ -1,0 +1,33 @@
+<h3>Table Results</h3>
+<!-- <div>
+  <p>Sort Type: {{ sortType }}</p>
+  <p>Sort Reverse: {{ sortReverse }}</p>
+</div> -->
+<table>
+  <thead>
+    <tr>
+      <td>
+        <a href="#" (click)="sortType === 'position' ? sortReverse = !sortReverse : false; sortType = 'position'">
+          Position
+        </a>
+      </td>
+      <td>
+        <a href="#" (click)="sortType === 'name' ? sortReverse = !sortReverse : false; sortType = 'name'">
+          Player Name
+        </a>
+      </td>
+      <td>
+        <a href="#" (click)="sortType === 'score' ? sortReverse = !sortReverse : false; sortType = 'score'">
+           Score
+        </a>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players | orderBy:sortType:sortReverse">
+      <td>{{ player.position }}</td>
+      <td>{{ player.name }}</td>
+      <td>{{ player.score }}</td>
+    </tr>
+  </tbody>
+</table>

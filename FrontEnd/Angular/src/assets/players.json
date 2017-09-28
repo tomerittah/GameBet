@@ -1,0 +1,54 @@
+[
+  {
+    "id": 0,
+    "name": "Tomer Ittah",
+    "score": 2,
+    "position": 1,
+    "games": [
+      {
+        "id": 1,
+        "homeTeamName": "Italy",
+        "awayTeamName": "England",
+        "homeTeamScore": 3,
+        "awayTeamScore": 4,
+        "stadium": "a",
+        "schedule": "c"
+      },
+      {
+        "id": 2,
+        "homeTeamName": "Spain",
+        "awayTeamName": "Portugal",
+        "homeTeamScore": 2,
+        "awayTeamScore": 3,
+        "stadium": "b",
+        "schedule": "d"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Ronny Genat",
+    "score": 1,
+    "position": 2,
+    "games": [
+      {
+        "id": 1,
+        "homeTeamName": "Italy",
+        "awayTeamName": "England",
+        "homeTeamScore": 2,
+        "awayTeamScore": 1,
+        "stadium": "a",
+        "schedule": "c"
+      },
+      {
+        "id": 2,
+        "homeTeamName": "Spain",
+        "awayTeamName": "Portugal",
+        "homeTeamScore": 2,
+        "awayTeamScore": 2,
+        "stadium": "b",
+        "schedule": "d"
+      }
+    ]
+  }
+]
