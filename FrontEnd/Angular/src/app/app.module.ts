@@ -12,13 +12,15 @@ import { GamesComponent } from './games/games.component';
 import { GameService } from './game.service';
 import { PlayerService } from './player.service';
 import { PlayersTableComponent } from './players-table/players-table.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameComponent,
     GamesComponent,
-    PlayersTableComponent
+    PlayersTableComponent,
+    PlayerDetailComponent
   ],
   imports: [
     BrowserModule,

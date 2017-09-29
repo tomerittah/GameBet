@@ -15,4 +15,9 @@ export class PlayerService {
                .then(response => response.json() as Player[]);
   }
 
+  getPlayer(id: number): Promise<Player> {
+    return this.http.get(this.playersUrl)
+               .toPromise()
+               .then(response => response.json()[id] as Player);
+  }
 }

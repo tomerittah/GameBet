@@ -1,0 +1,11 @@
+ <div *ngIf="player">
+  <p>Player Name: {{ player.name }}</p>
+  <p>Player Position: {{ player.position }}</p>
+  <p>Player Score: {{ player.score }}</p>
+  <h3>{{ player.name }} Bets</h3>
+  <ul>
+    <li *ngFor="let pg of player.games">
+      ID: {{ pg.id }} homeTeamName: {{ pg.homeTeamName }} homeTeamScore: {{ pg.homeTeamScore }}
+    </li>
+  </ul>
+</div>
