@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { Http } from '@angular/http';
 import { OrderModule } from 'ngx-order-pipe';
+import { Route, RouterModule  } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { GameComponent } from './game/game.component';
@@ -13,6 +14,16 @@ import { GameService } from './game.service';
 import { PlayerService } from './player.service';
 import { PlayersTableComponent } from './players-table/players-table.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { AppLoginComponent } from './components/app-login/app-login.component';
+import { PersonalAreaComponent } from './components/personal-area/personal-area.component';
+
+const ROUTES: Route[] = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: AppLoginComponent },
+  { path: 'dashboard', component: MainDashboardComponent },
+  { path: 'personal', component: PersonalAreaComponent }
+]
 
 @NgModule({
   declarations: [
@@ -20,13 +31,17 @@ import { PlayerDetailComponent } from './player-detail/player-detail.component';
     GameComponent,
     GamesComponent,
     PlayersTableComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    MainDashboardComponent,
+    AppLoginComponent,
+    PersonalAreaComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    OrderModule
+    OrderModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [
     GameService,

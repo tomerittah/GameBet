@@ -7,9 +7,13 @@ import { PlayerService } from '../player.service';
   templateUrl: './player-detail.component.html',
   styleUrls: ['./player-detail.component.css']
 })
+
 export class PlayerDetailComponent implements OnInit {
   private player: Player;
   private id: number = 0;
+  // private first_name: String;
+  // private last_name: String;
+  // private email: String;
 
   constructor(private pService: PlayerService) { }
 

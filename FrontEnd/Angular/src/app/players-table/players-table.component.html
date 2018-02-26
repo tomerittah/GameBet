@@ -7,17 +7,17 @@
   <thead>
     <tr>
       <td>
-        <a href="#" (click)="sortType === 'position' ? sortReverse = !sortReverse : false; sortType = 'position'">
+        <a (click)="sortType === 'position' ? sortReverse = !sortReverse : false; sortType = 'position'">
           Position
         </a>
       </td>
       <td>
-        <a href="#" (click)="sortType === 'name' ? sortReverse = !sortReverse : false; sortType = 'name'">
+        <a (click)="sortType === 'name' ? sortReverse = !sortReverse : false; sortType = 'name'">
           Player Name
         </a>
       </td>
       <td>
-        <a href="#" (click)="sortType === 'score' ? sortReverse = !sortReverse : false; sortType = 'score'">
+        <a (click)="sortType === 'score' ? sortReverse = !sortReverse : false; sortType = 'score'">
            Score
         </a>
       </td>
