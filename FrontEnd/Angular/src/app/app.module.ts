@@ -14,7 +14,7 @@ import { GameService } from './game.service';
 import { PlayerService } from './player.service';
 import { PlayersTableComponent } from './players-table/players-table.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
-import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
 import { AppLoginComponent } from './components/app-login/app-login.component';
 import { PersonalAreaComponent } from './components/personal-area/personal-area.component';
 
